@@ -1,0 +1,162 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+
+body {
+    background-image: url(img.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* body:after {
+    position: absolute;
+    content: "";
+    background: #eb5191;
+    width: 100%;
+    height: 50%;
+    top: 0;
+}
+
+body:before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+} */
+
+.container {
+    z-index: 1;
+    width: 70%;
+    margin: 0 0 0 0vw;
+    border-radius: 24px;
+    background: rgba(246, 245, 240, 0.6);
+    padding: 2%;
+    box-shadow: 0px 10px 6px -8px rgba(0, 0, 0, 0.75);
+    visibility: hidden;
+}
+
+.contMain {
+    height: 100vh;
+    width: 100%;
+    margin: 0vh 0 0 0;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.board {
+    column-count: 3;
+    column-gap: 1rem;
+}
+
+.container h2 {
+    margin: 0 0 30px;
+    text-align: center;
+}
+
+img#flag {
+    height: 20px;
+    width: 20px;
+}
+
+.card {
+    width: 84%;
+    background: #ccc;
+    padding: 8%;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.card.a {
+    background: rgba(65, 167, 255, 0.6);
+}
+
+.card.cr {
+    background: rgba(255, 52, 52, 0.6);
+}
+
+.card.r {
+    background: rgba(50, 179, 54, 0.6);
+}
+
+.card.ca {
+    background: rgba(216, 63, 63, 0.6);
+}
+
+.card.d {
+    background: rgba(255, 0, 83, 0.6);
+}
+
+.card.t {
+    background: rgba(255, 165, 1, 0.6);
+}
+
+.card h5 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.card span {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.card i {
+    font-size: 3rem;
+}
+
+.inpMain {
+    height: 10vh;
+    width: 73%;
+    border-radius: 24px;
+    background-color: rgba(255, 0, 0, 0.6);
+    /* margin: -92vh 0 0 10vw; */
+}
+
+#inp {
+    margin: -10vh 0 0 0;
+    height: 6vh;
+    width: 22vw;
+    border-radius: 10px;
+    outline: none;
+    outline-style: rgb(160, 19, 19);
+    font-size: 1.1em;
+    color: rgb(255, 165, 1);
+    background: rgba(144, 238, 144, 0.8);
+    margin: 1.5vh 0 0 13vw;
+}
+
+.btn {
+    height: 6vh;
+    width: 10vw;
+    border-radius: 10px;
+    font-size: 1.1em;
+    color: rgb(136, 92, 9);
+    outline: none;
+    background-color: lightgreen;
+    /* margin: -90vh 0 0 2vw; */
+}
+
+@media screen and (max-width: 768px) {
+    .board {
+        column-count: 2;
+    }
+    .card span {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .board {
+        column-count: 1;
+    }
+}
